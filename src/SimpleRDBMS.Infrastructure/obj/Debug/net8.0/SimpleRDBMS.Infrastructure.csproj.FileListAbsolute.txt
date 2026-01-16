@@ -1,0 +1,17 @@
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/bin/Debug/net8.0/SimpleRDBMS.Infrastructure.deps.json
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/bin/Debug/net8.0/SimpleRDBMS.Infrastructure.dll
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/bin/Debug/net8.0/SimpleRDBMS.Infrastructure.pdb
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/bin/Debug/net8.0/SimpleRDBMS.Application.dll
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/bin/Debug/net8.0/SimpleRDBMS.Domain.dll
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/bin/Debug/net8.0/SimpleRDBMS.Application.pdb
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/bin/Debug/net8.0/SimpleRDBMS.Domain.pdb
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/Debug/net8.0/SimpleRDBMS.Infrastructure.csproj.AssemblyReference.cache
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/Debug/net8.0/SimpleRDBMS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/Debug/net8.0/SimpleRDBMS.Infrastructure.AssemblyInfoInputs.cache
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/Debug/net8.0/SimpleRDBMS.Infrastructure.AssemblyInfo.cs
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/Debug/net8.0/SimpleRDBMS.Infrastructure.csproj.CoreCompileInputs.cache
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/Debug/net8.0/SimpleRDBMS.Infrastructure.csproj.CopyComplete
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/Debug/net8.0/SimpleRDBMS.Infrastructure.dll
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/Debug/net8.0/refint/SimpleRDBMS.Infrastructure.dll
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/Debug/net8.0/SimpleRDBMS.Infrastructure.pdb
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/Debug/net8.0/ref/SimpleRDBMS.Infrastructure.dll

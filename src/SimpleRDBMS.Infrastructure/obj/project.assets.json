@@ -1,0 +1,107 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "SimpleRDBMS.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SimpleRDBMS.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SimpleRDBMS.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SimpleRDBMS.Application.dll": {}
+        }
+      },
+      "SimpleRDBMS.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SimpleRDBMS.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SimpleRDBMS.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimpleRDBMS.Application/1.0.0": {
+      "type": "project",
+      "path": "../SimpleRDBMS.Application/SimpleRDBMS.Application.csproj",
+      "msbuildProject": "../SimpleRDBMS.Application/SimpleRDBMS.Application.csproj"
+    },
+    "SimpleRDBMS.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SimpleRDBMS.Domain/SimpleRDBMS.Domain.csproj",
+      "msbuildProject": "../SimpleRDBMS.Domain/SimpleRDBMS.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "SimpleRDBMS.Application >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/cyber-alchemist/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/SimpleRDBMS.Infrastructure.csproj",
+      "projectName": "SimpleRDBMS.Infrastructure",
+      "projectPath": "/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/SimpleRDBMS.Infrastructure.csproj",
+      "packagesPath": "/home/cyber-alchemist/.nuget/packages/",
+      "outputPath": "/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Infrastructure/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/cyber-alchemist/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/SimpleRDBMS.Application.csproj": {
+              "projectPath": "/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/SimpleRDBMS.Application.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

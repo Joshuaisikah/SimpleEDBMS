@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "UjrOc2GW73PyDvfWx0H/1+RsZ9OOE4myBObHTOW+q+8=",
+  "Source": "SimpleRDBMS.WebApi",
+  "BasePath": "_content/SimpleRDBMS.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SimpleRDBMS.WebApi/wwwroot",
+      "Source": "SimpleRDBMS.WebApi",
+      "ContentRoot": "/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.WebApi/wwwroot/",
+      "BasePath": "_content/SimpleRDBMS.WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.WebApi/wwwroot/index.html",
+      "SourceId": "SimpleRDBMS.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.WebApi/wwwroot/",
+      "BasePath": "_content/SimpleRDBMS.WebApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}

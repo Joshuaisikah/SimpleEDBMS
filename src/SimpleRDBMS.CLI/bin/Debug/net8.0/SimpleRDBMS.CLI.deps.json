@@ -1,0 +1,76 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SimpleRDBMS.CLI/1.0.0": {
+        "dependencies": {
+          "SimpleRDBMS.Infrastructure": "1.0.0",
+          "SimpleRDBMS.Parser": "1.0.0"
+        },
+        "runtime": {
+          "SimpleRDBMS.CLI.dll": {}
+        }
+      },
+      "SimpleRDBMS.Application/1.0.0": {
+        "dependencies": {
+          "SimpleRDBMS.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SimpleRDBMS.Application.dll": {}
+        }
+      },
+      "SimpleRDBMS.Domain/1.0.0": {
+        "runtime": {
+          "SimpleRDBMS.Domain.dll": {}
+        }
+      },
+      "SimpleRDBMS.Infrastructure/1.0.0": {
+        "dependencies": {
+          "SimpleRDBMS.Application": "1.0.0"
+        },
+        "runtime": {
+          "SimpleRDBMS.Infrastructure.dll": {}
+        }
+      },
+      "SimpleRDBMS.Parser/1.0.0": {
+        "dependencies": {
+          "SimpleRDBMS.Application": "1.0.0"
+        },
+        "runtime": {
+          "SimpleRDBMS.Parser.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimpleRDBMS.CLI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleRDBMS.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleRDBMS.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleRDBMS.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleRDBMS.Parser/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

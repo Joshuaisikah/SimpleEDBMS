@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - RDBMS Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .form-group { margin-bottom: 20px; }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+        .task-list { margin-top: 40px; }
+        .task-item {
+            padding: 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        .task-item:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+        .task-item.completed {
+            background: #f8f9fa;
+            opacity: 0.7;
+        }
+        .task-item.completed .task-title {
+            text-decoration: line-through;
+        }
+        .task-content { flex: 1; }
+        .task-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .task-desc {
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .task-priority {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        .priority-1 { background: #e3f2fd; color: #1976d2; }
+        .priority-2 { background: #fff3e0; color: #f57c00; }
+        .priority-3 { background: #ffebee; color: #c62828; }
+        .task-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .task-actions button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        .complete-btn { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+        .delete-btn { background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%); }
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        .stats {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📋 Task Manager</h1>
+    <p class="subtitle">Powered by Custom RDBMS - Pesapal Challenge Demo</p>
+
+    <div class="stats" id="stats">
+        <div class="stat-item">
+            <div class="stat-number" id="totalTasks">0</div>
+            <div class="stat-label">Total Tasks</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" id="completedTasks">0</div>
+            <div class="stat-label">Completed</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" id="pendingTasks">0</div>
+            <div class="stat-label">Pending</div>
+        </div>
+    </div>
+
+    <form id="taskForm">
+        <div class="form-group">
+            <label>Task Title *</label>
+            <input type="text" id="title" required placeholder="What needs to be done?">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea id="description" rows="3" placeholder="Add more details..."></textarea>
+        </div>
+        <div class="form-group">
+            <label>Priority</label>
+            <select id="priority">
+                <option value="1">Low</option>
+                <option value="2" selected>Medium</option>
+                <option value="3">High</option>
+            </select>
+        </div>
+        <button type="submit">➕ Add Task</button>
+    </form>
+
+    <div class="task-list">
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterTasks('all')">All</button>
+            <button class="filter-btn" onclick="filterTasks('pending')">Pending</button>
+            <button class="filter-btn" onclick="filterTasks('completed')">Completed</button>
+        </div>
+        <div id="taskList"></div>
+    </div>
+</div>
+
+<script>
+    const API_URL = '/api/tasks';
+    let currentFilter = 'all';
+
+    async function loadTasks() {
+        const url = currentFilter === 'all' ? API_URL :
+            currentFilter === 'completed' ? `${API_URL}?completed=true` :
+                `${API_URL}?completed=false`;
+
+        const response = await fetch(url);
+        const tasks = await response.json();
+
+        updateStats(tasks);
+
+        const list = document.getElementById('taskList');
+        list.innerHTML = tasks.map(task => `
+                <div class="task-item ${task.completed ? 'completed' : ''}">
+                    <div class="task-content">
+                        <div class="task-title">${escapeHtml(task.title)}</div>
+                        <div class="task-desc">${escapeHtml(task.description || '')}</div>
+                        <span class="task-priority priority-${task.priority}">
+                            ${task.priority == 1 ? 'Low' : task.priority == 2 ? 'Medium' : 'High'} Priority
+                        </span>
+                    </div>
+                    <div class="task-actions">
+                        ${!task.completed ?
+            `<button class="complete-btn" onclick="toggleComplete(${task.id})">✓ Complete</button>` :
+            `<button class="complete-btn" onclick="toggleComplete(${task.id})">↶ Undo</button>`
+        }
+                        <button class="delete-btn" onclick="deleteTask(${task.id})">✗ Delete</button>
+                    </div>
+                </div>
+            `).join('');
+    }
+
+    async function updateStats(tasks) {
+        const total = tasks.length;
+        const completed = tasks.filter(t => t.completed).length;
+        const pending = total - completed;
+
+        document.getElementById('totalTasks').textContent = total;
+        document.getElementById('completedTasks').textContent = completed;
+        document.getElementById('pendingTasks').textContent = pending;
+    }
+
+    document.getElementById('taskForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const task = {
+            title: document.getElementById('title').value,
+            description: document.getElementById('description').value,
+            priority: parseInt(document.getElementById('priority').value)
+        };
+
+        await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(task)
+        });
+
+        document.getElementById('title').value = '';
+        document.getElementById('description').value = '';
+        document.getElementById('priority').value = '2';
+        loadTasks();
+    });
+
+    async function toggleComplete(id) {
+        const response = await fetch(`${API_URL}/${id}`);
+        const task = await response.json();
+
+        await fetch(`${API_URL}/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ completed: !task.completed })
+        });
+        loadTasks();
+    }
+
+    async function deleteTask(id) {
+        if (confirm('Delete this task?')) {
+            await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+            loadTasks();
+        }
+    }
+
+    function filterTasks(filter) {
+        currentFilter = filter;
+        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+        loadTasks();
+    }
+
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    loadTasks();
+    setInterval(loadTasks, 30000); // Refresh every 30 seconds
+</script>
+</body>
+</html>

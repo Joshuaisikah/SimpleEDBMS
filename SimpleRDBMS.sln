@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A85BC6BB-3CBB-440D-8288-5E86048B36FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRDBMS.Application", "src\SimpleRDBMS.Application\SimpleRDBMS.Application.csproj", "{9F7B7E0B-1676-444A-A9B0-E04502ABF811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRDBMS.CLI", "src\SimpleRDBMS.CLI\SimpleRDBMS.CLI.csproj", "{7070303C-EA1A-4706-B189-AD9704D6C4FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRDBMS.Domain", "src\SimpleRDBMS.Domain\SimpleRDBMS.Domain.csproj", "{5277158E-BFCB-4CF4-8C1A-7C40BCDED254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRDBMS.Infrastructure", "src\SimpleRDBMS.Infrastructure\SimpleRDBMS.Infrastructure.csproj", "{448D2CB5-98DE-4BFA-8E42-4BFF35EBD95F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRDBMS.Parser", "src\SimpleRDBMS.Parser\SimpleRDBMS.Parser.csproj", "{D662CA92-40D6-460B-B3EA-78E135777F06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRDBMS.WebApi", "src\SimpleRDBMS.WebApi\SimpleRDBMS.WebApi.csproj", "{DD75B084-5CE0-41EE-A763-824AFC8E632B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F7B7E0B-1676-444A-A9B0-E04502ABF811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7B7E0B-1676-444A-A9B0-E04502ABF811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7B7E0B-1676-444A-A9B0-E04502ABF811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7B7E0B-1676-444A-A9B0-E04502ABF811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7070303C-EA1A-4706-B189-AD9704D6C4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7070303C-EA1A-4706-B189-AD9704D6C4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7070303C-EA1A-4706-B189-AD9704D6C4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7070303C-EA1A-4706-B189-AD9704D6C4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5277158E-BFCB-4CF4-8C1A-7C40BCDED254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5277158E-BFCB-4CF4-8C1A-7C40BCDED254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5277158E-BFCB-4CF4-8C1A-7C40BCDED254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5277158E-BFCB-4CF4-8C1A-7C40BCDED254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448D2CB5-98DE-4BFA-8E42-4BFF35EBD95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448D2CB5-98DE-4BFA-8E42-4BFF35EBD95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448D2CB5-98DE-4BFA-8E42-4BFF35EBD95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448D2CB5-98DE-4BFA-8E42-4BFF35EBD95F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D662CA92-40D6-460B-B3EA-78E135777F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D662CA92-40D6-460B-B3EA-78E135777F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D662CA92-40D6-460B-B3EA-78E135777F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D662CA92-40D6-460B-B3EA-78E135777F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD75B084-5CE0-41EE-A763-824AFC8E632B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD75B084-5CE0-41EE-A763-824AFC8E632B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD75B084-5CE0-41EE-A763-824AFC8E632B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD75B084-5CE0-41EE-A763-824AFC8E632B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F7B7E0B-1676-444A-A9B0-E04502ABF811} = {A85BC6BB-3CBB-440D-8288-5E86048B36FD}
+		{7070303C-EA1A-4706-B189-AD9704D6C4FC} = {A85BC6BB-3CBB-440D-8288-5E86048B36FD}
+		{5277158E-BFCB-4CF4-8C1A-7C40BCDED254} = {A85BC6BB-3CBB-440D-8288-5E86048B36FD}
+		{448D2CB5-98DE-4BFA-8E42-4BFF35EBD95F} = {A85BC6BB-3CBB-440D-8288-5E86048B36FD}
+		{D662CA92-40D6-460B-B3EA-78E135777F06} = {A85BC6BB-3CBB-440D-8288-5E86048B36FD}
+		{DD75B084-5CE0-41EE-A763-824AFC8E632B} = {A85BC6BB-3CBB-440D-8288-5E86048B36FD}
+	EndGlobalSection
+EndGlobal

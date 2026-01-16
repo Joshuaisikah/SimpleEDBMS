@@ -1,0 +1,15 @@
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/obj/Debug/net8.0/SimpleRDBMS.Application.csproj.AssemblyReference.cache
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/obj/Debug/net8.0/SimpleRDBMS.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/obj/Debug/net8.0/SimpleRDBMS.Application.AssemblyInfoInputs.cache
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/obj/Debug/net8.0/SimpleRDBMS.Application.AssemblyInfo.cs
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/obj/Debug/net8.0/SimpleRDBMS.Application.csproj.CoreCompileInputs.cache
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/bin/Debug/net8.0/SimpleRDBMS.Application.deps.json
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/bin/Debug/net8.0/SimpleRDBMS.Application.dll
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/bin/Debug/net8.0/SimpleRDBMS.Application.pdb
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/bin/Debug/net8.0/SimpleRDBMS.Domain.dll
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/bin/Debug/net8.0/SimpleRDBMS.Domain.pdb
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/obj/Debug/net8.0/SimpleRDBMS.Application.csproj.CopyComplete
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/obj/Debug/net8.0/SimpleRDBMS.Application.dll
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/obj/Debug/net8.0/refint/SimpleRDBMS.Application.dll
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/obj/Debug/net8.0/SimpleRDBMS.Application.pdb
+/home/cyber-alchemist/SimpleEDBMS/src/SimpleRDBMS.Application/obj/Debug/net8.0/ref/SimpleRDBMS.Application.dll

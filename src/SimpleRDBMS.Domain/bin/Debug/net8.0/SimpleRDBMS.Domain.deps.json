@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SimpleRDBMS.Domain/1.0.0": {
+        "runtime": {
+          "SimpleRDBMS.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimpleRDBMS.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
