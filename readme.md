@@ -91,7 +91,7 @@ I chose **Clean Architecture** to ensure separation of concerns and maintainabil
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/pesapal-rdbms-challenge.git
+git clone https://github.com/Joshuaisikah/SimpleEDBMS.git
 cd SimpleEDBMS
 ```
 
