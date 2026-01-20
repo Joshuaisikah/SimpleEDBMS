@@ -92,7 +92,7 @@ I chose **Clean Architecture** to ensure separation of concerns and maintainabil
 ### Clone the Repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/pesapal-rdbms-challenge.git
-cd pesapal-rdbms-challenge
+cd SimpleEDBMS
 ```
 
 ### Build the Solution
