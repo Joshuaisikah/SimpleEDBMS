@@ -691,17 +691,6 @@ MIT License - This project is open source and available for learning purposes.
 
 ---
 
-## 👨‍💻 Author
-
-**Your Name**  
-Developed for the **Pesapal Junior Developer Challenge 2026**
-
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- Email: your.email@example.com
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-
----
-
 ## 🚀 Submission Details
 
 **Challenge**: Pesapal Junior Dev Challenge '26  
